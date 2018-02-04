@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.akhikhl.gretty' version '1.4.2'
+}
+
+
+
+repositories {
+	mavenLocal()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    testCompile 'junit:junit:4.12'
+}
